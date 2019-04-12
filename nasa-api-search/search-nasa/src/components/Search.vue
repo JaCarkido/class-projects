@@ -31,6 +31,7 @@ export default {
         axios.get(process.env.VUE_APP_REMOTE_API + userInput + '&media_type=image').then(response => {
             this.results = response.data.collection.items;
             //this.results.slice(0,10);
+            console.log(response);
             console.log(this.results);
         });
         }
